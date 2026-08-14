@@ -44,6 +44,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 - Created React app with Vite
 - Installed tailwindcss v4 with vite
+- Git Initialized
 
 # Features
 
