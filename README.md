@@ -42,9 +42,12 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # NetflixGPT
 
-- Created React app with Vite
-- Installed tailwindcss v4 with vite
+- Uses React app with Vite
+- Uses tailwindcss v4 with vite
 - Git Initialized
+- New Logo and background
+- Header
+- Login form
 
 # Features
 
