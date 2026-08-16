@@ -47,7 +47,10 @@ If you are developing a production application, we recommend using TypeScript wi
 - Git Initialized
 - New Logo and background
 - Header
+- Routing
 - Login form
+- Sign up form
+- Form Validation
 
 # Features
 
