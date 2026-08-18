@@ -1,4 +1,4 @@
-export const checkValidation = (email, pwd) => {
+export const checkValidation = (email, pwd, fname) => {
   const checkEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(
     email,
   );
@@ -6,11 +6,11 @@ export const checkValidation = (email, pwd) => {
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(
       pwd,
     );
-
-  console.log(checkEmail, checkPwd);
+  const checkName = fname ? /^[A-Za-z]+(?: [A-Za-z]+)+$/.test(fname) : true;
 
   if (!checkEmail) return "Invalid E-mail!!";
   if (!checkPwd) return "Invalid Password!!";
+  if (!checkName) return "Invalid Name";
 
   return null;
 };

@@ -51,6 +51,12 @@ If you are developing a production application, we recommend using TypeScript wi
 - Login form
 - Sign up form
 - Form Validation
+- Firebase setup
+- App deploy on firebase
+- Authentication
+- Redux store
+- Sign In/Sign Out
+- User icon and dropdown
 
 # Features
 
