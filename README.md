@@ -57,6 +57,11 @@ If you are developing a production application, we recommend using TypeScript wi
 - Redux store
 - Sign In/Sign Out
 - User icon and dropdown
+- Bugfix - Navigation to browse page restricted to Signed in users. Navigation to Login page to all signed out and new users
+- TMDB data base for movies
+- Fetch movie API from TMDB
+- Store for Now Playing movie list
+- Custom hook to fetch movie list
 
 # Features
 

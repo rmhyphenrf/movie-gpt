@@ -2,21 +2,28 @@ import logo from "../assets/moviq_logo.png";
 import userIcon from "../assets/user_icon.png";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import User from "./User";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+    const nav = useNavigate();
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userClicked, setUserClicked] = useState(false);
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-            if (auth.currentUser) {
-                setIsLoggedIn(true);
+
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                if (auth.currentUser) {
+                    setIsLoggedIn(true);
+                    nav("/browse");
+                }
+            } else {
+                setIsLoggedIn(false);
+                nav("/");
             }
-        } else {
-            setIsLoggedIn(false);
-        }
-    });
+        });
+    })
 
     return (
         <div className="flex justify-between">

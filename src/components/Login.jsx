@@ -4,12 +4,10 @@ import Header from "./Header";
 import { checkValidation } from "../utils/validator";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../store/userSlice";
 
 const Login = () => {
-    const nav = useNavigate();
     const disp = useDispatch();
     const [isSignIn, setIsSignIn] = useState(true);
     const [errorString, setErrorString] = useState("");
@@ -29,7 +27,6 @@ const Login = () => {
                 disp(addUser({
                     userId: uid, email: email.current.value, password: password.current.value, displayName: fullName.current.value,
                 }));
-                nav("/browse");
                 // ...
             })
             .catch((error) => {
@@ -47,7 +44,6 @@ const Login = () => {
                 disp(addUser({
                     userId: uid, email: email.current.value, password: password.current.value,
                 }));
-                nav("/browse");
                 // ...
             })
             .catch((error) => {
