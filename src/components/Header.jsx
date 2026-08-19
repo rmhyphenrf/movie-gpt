@@ -27,8 +27,8 @@ const Header = () => {
 
     return (
         <div className="flex justify-between">
-            <img className="m-2 p-2 w-48 h-20 shadow-white" src={logo} alt="logo"></img>
-            <div className="flex flex-col items-end">
+            {!isLoggedIn ? <img className="m-2 p-2 w-48 h-20 shadow-white" src={logo} alt="logo"></img> : <div></div>}
+            <div className="m-3 flex flex-col items-end">
                 {isLoggedIn && <img className="mx-4 mt-3 mb-2 w-9 h-9 shadow-white cursor-pointer" src={userIcon} alt="user" onClick={() => setUserClicked(!userClicked)}></img>}
                 {userClicked && <User />}
             </div>            

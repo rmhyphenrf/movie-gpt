@@ -11,3 +11,6 @@ export const API_OPTIONS = {
 };
 export const NOW_PLAYING_MOVIES_URL =
   "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1";
+export const VIDEO_TRAILER_URL = {
+  URL: (id) => `https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`,
+};

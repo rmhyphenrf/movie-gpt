@@ -62,6 +62,9 @@ If you are developing a production application, we recommend using TypeScript wi
 - Fetch movie API from TMDB
 - Store for Now Playing movie list
 - Custom hook to fetch movie list
+- Movie Title and Overview on browse page
+- Movie Trailer in the background
+- Play and More info button
 
 # Features
 
