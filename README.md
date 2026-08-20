@@ -65,6 +65,8 @@ If you are developing a production application, we recommend using TypeScript wi
 - Movie Title and Overview on browse page
 - Movie Trailer in the background
 - Play and More info button
+- Fetch popular movie list and add to store
+- Movie categories and Movie card components
 
 # Features
 

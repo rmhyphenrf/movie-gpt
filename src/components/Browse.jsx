@@ -1,14 +1,16 @@
 import useGetNowPlayingMovies from "../hooks/useGetNowPlayingMovies";
 import Header from "./Header";
 import MovieDetail from "./MovieDetail";
+import MovieList from "./MovieList";
 
 const Browse = () => {
     useGetNowPlayingMovies();
 
     return (
-        <div className="relative min-h-screen min-w-full overflow-hidden">
-            <div className="absolute w-full z-20"><Header /></div>
+        <div className="relative w-screen h-screen">
+            <div className="absolute z-40 w-full"><Header /></div>
             <MovieDetail />
+            <div className=""><MovieList /></div>
         </div>
     )
 }

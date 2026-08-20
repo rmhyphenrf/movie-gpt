@@ -5,9 +5,8 @@ const VideoTrailer = ({movieId}) => {
     useGetVideoTrailer(movieId);
     const trailerObj = useSelector((state) => state.movies.movieTrailer);
     if (!trailerObj) return;
-    console.log(trailerObj[0].key, 'obj');
     return (
-        <div className="w-full h-full overflow-hidden">
+        <div className="absolute w-screen h-screen">
             <iframe
                 className="w-full h-full"
                 src={"https://www.youtube.com/embed/" + trailerObj[0].key + "?si=3eaTDnrl4oNaJAtx&autoplay=1&mute=1"}
