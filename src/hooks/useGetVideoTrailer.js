@@ -11,8 +11,9 @@ const useGetVideoTrailer = (id) => {
     const trailers = json.results.filter((mov) => mov.type === "Trailer");
     const actualTrailer =
       trailers.length > 1
-        ? trailers.filter((item) => item.name === "Official Trailer")
-        : trailers;
+        ? trailers[0]
+        : // .filter((item) => item.name === "Official Trailer")
+          trailers;
     disp(addMovieTrailer(actualTrailer));
   };
 

@@ -67,6 +67,8 @@ If you are developing a production application, we recommend using TypeScript wi
 - Play and More info button
 - Fetch popular movie list and add to store
 - Movie categories and Movie card components
+- Custom hooks to fetch upcoming and top rated movie list
+- Upcoming and Top Rated Movie lists
 
 # Features
 

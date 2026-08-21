@@ -7,10 +7,10 @@ const Browse = () => {
     useGetNowPlayingMovies();
 
     return (
-        <div className="relative w-screen h-screen">
+        <div className="relative w-full h-screen">
             <div className="absolute z-40 w-full"><Header /></div>
             <MovieDetail />
-            <div className=""><MovieList /></div>
+            <div className="w-full"><MovieList /></div>
         </div>
     )
 }
