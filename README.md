@@ -69,6 +69,8 @@ If you are developing a production application, we recommend using TypeScript wi
 - Movie categories and Movie card components
 - Custom hooks to fetch upcoming and top rated movie list
 - Upcoming and Top Rated Movie lists
+- GPT search page with search bar
+- Localization of GPT search page with English kannada & Hindi.
 
 # Features
 

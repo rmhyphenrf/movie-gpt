@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Body from "./components/Body"
 import Browse from "./components/Browse"
+import GptSearch from "./components/GptSearch"
 import { Provider } from "react-redux"
 import appStore from "./store/appStore"
 
@@ -13,6 +14,10 @@ function App() {
         {
             path: "/browse",
             element: <Browse />
+        },
+        {
+          path: "/gpt-search",
+          element: <GptSearch />
         },
     ])
 

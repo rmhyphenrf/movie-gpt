@@ -21,3 +21,10 @@ export const VIDEO_TRAILER_URL = {
   URL: (id) => `https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`,
 };
 export const MOVIE_POSTER_URL = "https://image.tmdb.org/t/p/w500";
+export const GPT_SEARCH = {
+  lang: {
+    en: "English",
+    kn: "Kannada",
+    hi: "Hindi",
+  },
+}

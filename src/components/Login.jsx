@@ -72,7 +72,7 @@ const Login = () => {
                     <h1 className="m-4 text-4xl">{isSignIn ? "Sign In" : "Sign Up"}</h1>
                     {!isSignIn && <input className="w-8/12 mt-4 mx-4 p-2 bg-gray-800 rounded-lg" ref={fullName} type="textbox" placeholder="Full Name"></input>}
                     <input className="w-8/12 mt-4 my-2 mx-4 p-2 bg-gray-800 rounded-lg" ref={email} type="textbox" placeholder="Email"></input>
-                    <input className="w-8/12 my-2 mx-4 p-2 bg-gray-800 rounded-lg" ref={password} type="textbox" type="password" placeholder="password"></input>
+                    <input className="w-8/12 my-2 mx-4 p-2 bg-gray-800 rounded-lg" ref={password} type="password" placeholder="password"></input>
                     <div className="text-red-600 text-sm">{ errorString}</div>
                     <button className="w-8/12 my-6 p-2 bg-linear-to-br from-teal-300 via-indigo-600 to-pink-400 rounded-lg cursor-pointer" onClick={handleSubmit}>{isSignIn ? "Sign In" : "Sign Up"}</button>
                     {isSignIn ? <p className="my-10 mx-22 self-start text-gray-400">New to Moviq?  <span className="text-white cursor-pointer hover:text-teal-200" onClick={() => setIsSignIn(!isSignIn)}>Sign up now</span></p> :
